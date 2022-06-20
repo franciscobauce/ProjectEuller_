@@ -1,7 +1,6 @@
 <?php
 function testar(int $numero): int
 {
-    $array = [];
     $soma = 0;
     $str = strval($numero);
     $strLen = strlen($str);
@@ -37,20 +36,16 @@ function testar(int $numero): int
 
         } else {
             $int = 362880;
-
         }
-
         $soma += $int;
 
     }
 
-    $array[] = $soma;
 
     if ($soma == $numero) {
-        foreach ($array as $teste){
-        echo "$teste" . PHP_EOL;
+        echo $numero. PHP_EOL;
         return $soma;
-        }
+
     }
 
     return false;
